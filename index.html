@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/productService.js"></script>
+    <script src="assets/cartService.js"></script>
+    <script src="assets/htmlService.js"></script>
+    <title>RS store</title>
+</head>
+<body>
+<header>
+    <div class="container pt-5">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="form-group" style="width:300px">
+                <input
+                        type="text"
+                        class="form-control"
+                        id="filterInput"
+                        placeholder="Type something to search">
+            </div>
+            <button
+                    type="button"
+                    class="btn btn-info"
+                    id="cartToggler"
+                    style="width:300px;"
+            >Shopping basket</button>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container pt-5 pb-5">
+        <h1>All you need</h1>
+        <p>And more...</p>
+        <div class="row" id="productsList">
+            <h3 style="text-align: center" class="mt-5">Loading... Please wait</h3>
+        </div>
+    </div>
+    <div class="cart-container" id="shoppingBasket"></div>
+    <div class="alert alert-dismissible alert-success" id="addAlert">
+        Successfully added
+    </div>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>
